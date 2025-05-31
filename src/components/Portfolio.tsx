@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Building2, GraduationCap, Store, ChefHat, Camera, Home } from 'lucide-react';
+import { Building2, GraduationCap, Store, ChefHat, Camera, Home, Palette, Image, FileImage } from 'lucide-react';
 
 const Portfolio = () => {
   const industries = [
@@ -36,28 +36,118 @@ const Portfolio = () => {
     }
   ];
 
+  const projectCategories = [
+    {
+      icon: Palette,
+      title: "Logo Making",
+      description: "Professional brand identity creation with modern design principles, color psychology, and scalable vector graphics that work across all platforms",
+      skills: [
+        "Brand Identity Design",
+        "Vector Graphics Creation",
+        "Color Psychology Application",
+        "Typography Selection",
+        "Scalable Design Solutions"
+      ],
+      projects: [
+        {
+          image: "/lovable-uploads/97d0d816-f44a-4116-a32a-257ee201ac8b.png",
+          title: "Arun Ice Creams",
+          description: "Modern ice cream brand logo with playful typography"
+        },
+        {
+          image: "/lovable-uploads/5e7a846c-b127-404f-ab78-94388c2f6272.png",
+          title: "Green Leaf Restaurant",
+          description: "Eco-friendly restaurant logo with organic design elements"
+        },
+        {
+          image: "/lovable-uploads/394e819e-85ef-449e-bd88-043433b45363.png",
+          title: "Marketing Amigo",
+          description: "Professional marketing agency logo with growth symbolism"
+        }
+      ]
+    },
+    {
+      icon: Image,
+      title: "Poster Design",
+      description: "Eye-catching promotional materials that capture attention and drive engagement with strategic messaging and visual hierarchy",
+      skills: [
+        "Visual Hierarchy Design",
+        "Strategic Messaging",
+        "Color Composition",
+        "Typography Layout",
+        "Print & Digital Optimization"
+      ],
+      projects: [
+        {
+          image: "/lovable-uploads/d195c3df-2a08-4f78-9756-50da0866ce66.png",
+          title: "Senco Gold Mother's Day",
+          description: "Elegant Mother's Day promotional poster with emotional appeal"
+        },
+        {
+          image: "/lovable-uploads/44be3f9a-b2bb-4917-bdca-dcb2d93a7ee1.png",
+          title: "Arun Summer Campaign",
+          description: "Vibrant summer vacation promotional poster with festive elements"
+        },
+        {
+          image: "/lovable-uploads/f8be198b-14c7-4066-b371-9c9e13d3bf87.png",
+          title: "Sunshine Creation Jewelry",
+          description: "Luxury jewelry poster with premium aesthetic and sparkle effects"
+        }
+      ]
+    },
+    {
+      icon: FileImage,
+      title: "Cover Photo Design",
+      description: "Compelling social media covers and banners that enhance brand presence with consistent visual storytelling",
+      skills: [
+        "Social Media Optimization",
+        "Brand Consistency",
+        "Visual Storytelling",
+        "Platform-Specific Sizing",
+        "Engagement-Focused Design"
+      ],
+      projects: [
+        {
+          image: "/lovable-uploads/a05bc6c6-5603-414a-881b-b7c954ae0282.png",
+          title: "The Creative Creation",
+          description: "Creative agency cover showcasing diverse portfolio and imagination"
+        },
+        {
+          image: "/lovable-uploads/03c1d770-0010-4625-8cec-0aed5169f326.png",
+          title: "Sunshine Creation Banner",
+          description: "Jewelry business banner with elegant product showcase"
+        },
+        {
+          image: "/lovable-uploads/874625ea-165a-4787-a244-efd0a4eb4465.png",
+          title: "Pet Paradise Cover",
+          description: "Pet care business cover with friendly and welcoming design"
+        }
+      ]
+    }
+  ];
+
   return (
     <section id="portfolio" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-fade-in">
             Industries We Serve
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto mb-8"></div>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <div className="w-20 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto mb-8 animate-scale-in"></div>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
             We've helped businesses across various industries achieve their digital goals
           </p>
         </div>
 
-        <div className="mb-16">
+        <div className="mb-20">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {industries.map((industry, index) => (
               <div 
                 key={index}
-                className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 text-center animate-fade-in"
+                className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center animate-fade-in group"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-primary to-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-primary to-primary-light rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-bounce-slow">
                   <industry.icon className="w-8 h-8 text-white" />
                 </div>
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">{industry.title}</h4>
@@ -67,32 +157,79 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-lg shadow-lg p-8">
-          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
-            Project Showcase
+        <div className="bg-white rounded-2xl shadow-2xl p-8 animate-fade-in">
+          <h3 className="text-3xl font-bold text-center text-gray-900 mb-4 animate-scale-in">
+            Our Creative Showcase
           </h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-gray-100 rounded-lg p-6 text-center">
-              <div className="w-full h-32 bg-gradient-to-r from-primary to-primary-light rounded-lg mb-4 flex items-center justify-center">
-                <span className="text-white font-semibold">E-commerce Store</span>
+          <p className="text-center text-gray-600 mb-12 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            Explore our expertise across different design categories
+          </p>
+          
+          <div className="space-y-16">
+            {projectCategories.map((category, categoryIndex) => (
+              <div 
+                key={categoryIndex}
+                className="animate-fade-in"
+                style={{ animationDelay: `${categoryIndex * 0.3}s` }}
+              >
+                <div className="flex items-center justify-center mb-8">
+                  <div className="w-12 h-12 bg-gradient-to-r from-primary to-primary-light rounded-full flex items-center justify-center mr-4 animate-pulse-slow">
+                    <category.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <h4 className="text-2xl font-bold text-gray-900">{category.title}</h4>
+                </div>
+                
+                <p className="text-gray-600 text-center mb-6 max-w-3xl mx-auto">
+                  {category.description}
+                </p>
+                
+                <div className="flex flex-wrap justify-center gap-3 mb-8">
+                  {category.skills.map((skill, skillIndex) => (
+                    <span 
+                      key={skillIndex}
+                      className="bg-gradient-to-r from-primary/10 to-primary-light/10 text-primary px-4 py-2 rounded-full text-sm font-medium hover:scale-105 transition-transform duration-200 animate-fade-in"
+                      style={{ animationDelay: `${categoryIndex * 0.3 + skillIndex * 0.1}s` }}
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="grid md:grid-cols-3 gap-8">
+                  {category.projects.map((project, projectIndex) => (
+                    <div 
+                      key={projectIndex}
+                      className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 animate-scale-in bg-gradient-to-br from-gray-50 to-white"
+                      style={{ animationDelay: `${categoryIndex * 0.3 + projectIndex * 0.2}s` }}
+                    >
+                      <div className="relative overflow-hidden">
+                        <img 
+                          src={project.image} 
+                          alt={project.title}
+                          className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      </div>
+                      
+                      <div className="p-6">
+                        <h5 className="font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors duration-300">
+                          {project.title}
+                        </h5>
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                          {project.description}
+                        </p>
+                      </div>
+                      
+                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div className="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center">
+                          <category.icon className="w-4 h-4 text-primary" />
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <h4 className="font-semibold text-gray-900 mb-2">E-commerce Platform</h4>
-              <p className="text-gray-600 text-sm">Complete online store with payment integration and inventory management</p>
-            </div>
-            <div className="bg-gray-100 rounded-lg p-6 text-center">
-              <div className="w-full h-32 bg-gradient-to-r from-primary to-primary-light rounded-lg mb-4 flex items-center justify-center">
-                <span className="text-white font-semibold">Restaurant Website</span>
-              </div>
-              <h4 className="font-semibold text-gray-900 mb-2">Restaurant Website</h4>
-              <p className="text-gray-600 text-sm">Professional restaurant website with online menu and reservation system</p>
-            </div>
-            <div className="bg-gray-100 rounded-lg p-6 text-center">
-              <div className="w-full h-32 bg-gradient-to-r from-primary to-primary-light rounded-lg mb-4 flex items-center justify-center">
-                <span className="text-white font-semibold">Digital Campaign</span>
-              </div>
-              <h4 className="font-semibold text-gray-900 mb-2">Social Media Marketing</h4>
-              <p className="text-gray-600 text-sm">Comprehensive social media campaigns with increased engagement</p>
-            </div>
+            ))}
           </div>
         </div>
       </div>
