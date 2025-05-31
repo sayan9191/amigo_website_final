@@ -21,8 +21,8 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Location",
-      content: "Basirhat Baro Kalibari Para",
-      link: "https://g.co/kgs/AQfKQHg"
+      content: "Basirhat Baro Kalibari Para, West Bengal, Pin - 743411",
+      link: "https://g.co/kgs/Mx6mKgr"
     }
   ];
 

@@ -1,7 +1,6 @@
 
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Mail, MapPin } from 'lucide-react';
 
 const ContactForm = () => {
@@ -103,7 +102,14 @@ const ContactForm = () => {
           </div>
           <div className="flex items-center space-x-3">
             <MapPin className="w-4 h-4 text-primary" />
-            <span className="text-gray-600">Basirhat Baro Kalibari Para</span>
+            <a 
+              href="https://g.co/kgs/Mx6mKgr" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-primary transition-colors"
+            >
+              Basirhat Baro Kalibari Para, West Bengal, Pin - 743411
+            </a>
           </div>
         </div>
       </div>

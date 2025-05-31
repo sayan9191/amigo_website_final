@@ -5,21 +5,33 @@ import { Star, Quote } from 'lucide-react';
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "Restaurant Owner",
-      content: "Marketing Amigo helped us grow from scratch. Their digital strategies truly work.",
+      name: "Abhijit Ghosh",
+      role: "Proprietor, Rasana Caterer and Event Organizer",
+      content: "Their banner designs truly reflect the spirit of our catering services. Very affordable and professional team.",
       rating: 5
     },
     {
-      name: "Michael Chen",
-      role: "E-commerce Business",
-      content: "Professional, responsive, and reliable — highly recommended.",
+      name: "Rittick Dutta",
+      role: "Restaurant Owner, GREEN LEAF – Family Fine Dine Restaurant",
+      content: "Marketing Amigo helped us improve our local brand recognition. Their campaigns brought in new customers during key festive periods.",
       rating: 5
     },
     {
-      name: "Priya Sharma",
-      role: "Education Institute",
-      content: "Their website development service exceeded our expectations. Great team to work with.",
+      name: "Debasish Ghosh",
+      role: "Co-Owner, Sunshine Creation Jewellery",
+      content: "We needed clean, professional marketing without fluff, and that's exactly what Marketing Amigo delivered. Very reliable.",
+      rating: 5
+    },
+    {
+      name: "Store Manager",
+      role: "Senco Gold & Diamonds (Basirhat)",
+      content: "We were looking for a marketing partner who could maintain the premium image of the Senco brand while reaching local customers effectively. Marketing Amigo understood our brand positioning and delivered professional, tasteful creatives that align perfectly with our identity.",
+      rating: 5
+    },
+    {
+      name: "Owner",
+      role: "Bhooter Raja Dilo Bor, Rajarhat",
+      content: "Our restaurant stands out for its unique theme and Bengali culinary experience, and Marketing Amigo captured that essence beautifully through their social media strategies and banner designs. Their festive campaigns brought in great visibility and customer engagement.",
       rating: 5
     }
   ];
@@ -33,11 +45,11 @@ const Testimonials = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Don't just take our word for it - hear from some of our satisfied clients
+            Real testimonials from our satisfied clients across different industries
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}

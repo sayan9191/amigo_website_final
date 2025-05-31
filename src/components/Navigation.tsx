@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import ContactForm from '@/components/ContactForm';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,6 +21,11 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
+            <img 
+              src="/lovable-uploads/eb0797fc-2ed6-4d04-ab2b-474629c1ebc0.png" 
+              alt="Marketing Amigo" 
+              className="h-10 w-auto mr-3"
+            />
             <div className="text-2xl font-bold bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
               Marketing Amigo
             </div>
@@ -39,9 +46,19 @@ const Navigation = () => {
           </div>
 
           <div className="hidden md:block">
-            <Button className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary">
-              Get in Touch
-            </Button>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary">
+                  Get in Touch
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="max-w-md">
+                <DialogHeader>
+                  <DialogTitle className="text-2xl text-center text-primary">Get in Touch</DialogTitle>
+                </DialogHeader>
+                <ContactForm />
+              </DialogContent>
+            </Dialog>
           </div>
 
           <div className="md:hidden">
@@ -69,9 +86,19 @@ const Navigation = () => {
               </a>
             ))}
             <div className="pt-2">
-              <Button className="w-full bg-gradient-to-r from-primary to-primary-light">
-                Get in Touch
-              </Button>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button className="w-full bg-gradient-to-r from-primary to-primary-light">
+                    Get in Touch
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="max-w-md">
+                  <DialogHeader>
+                    <DialogTitle className="text-2xl text-center text-primary">Get in Touch</DialogTitle>
+                  </DialogHeader>
+                  <ContactForm />
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
         </div>
