@@ -92,9 +92,9 @@ const Portfolio = () => {
           description: "Vibrant summer vacation promotional poster with festive elements"
         },
         {
-          image: "/lovable-uploads/f8be198b-14c7-4066-b371-9c9e13d3bf87.png",
-          title: "Sunshine Creation Jewelry",
-          description: "Luxury jewelry poster with premium aesthetic and sparkle effects"
+          image: "/lovable-uploads/e47b2e9f-bf14-4a35-bd21-06a534d3c4e0.png",
+          title: "Bhooter Raja Bengali Restaurant",
+          description: "Traditional Bengali restaurant poster with cultural elements and festive food presentation"
         }
       ]
     },

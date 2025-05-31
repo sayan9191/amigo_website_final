@@ -14,7 +14,7 @@ const Footer = () => {
           </p>
           <div className="border-t border-gray-800 pt-4">
             <p className="text-gray-400 text-sm">
-              © 2024 Marketing Amigo. All rights reserved. | 
+              © 2025 Marketing Amigo. All rights reserved. | 
               <span className="ml-1">Built with passion for digital excellence</span>
             </p>
           </div>
