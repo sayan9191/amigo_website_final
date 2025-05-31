@@ -1,8 +1,11 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Building2, GraduationCap, Store, ChefHat, Camera, Home, Palette, Image, FileImage } from 'lucide-react';
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 
 const Portfolio = () => {
+  const [selectedImage, setSelectedImage] = useState<{ src: string; title: string; description: string } | null>(null);
+
   const industries = [
     {
       icon: GraduationCap,
@@ -197,35 +200,51 @@ const Portfolio = () => {
 
                 <div className="grid md:grid-cols-3 gap-8">
                   {category.projects.map((project, projectIndex) => (
-                    <div 
-                      key={projectIndex}
-                      className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 animate-scale-in bg-gradient-to-br from-gray-50 to-white"
-                      style={{ animationDelay: `${categoryIndex * 0.3 + projectIndex * 0.2}s` }}
-                    >
-                      <div className="relative overflow-hidden">
-                        <img 
-                          src={project.image} 
-                          alt={project.title}
-                          className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      </div>
-                      
-                      <div className="p-6">
-                        <h5 className="font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors duration-300">
-                          {project.title}
-                        </h5>
-                        <p className="text-gray-600 text-sm leading-relaxed">
-                          {project.description}
-                        </p>
-                      </div>
-                      
-                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <div className="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center">
-                          <category.icon className="w-4 h-4 text-primary" />
+                    <Dialog key={projectIndex}>
+                      <DialogTrigger asChild>
+                        <div 
+                          className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 animate-scale-in bg-gradient-to-br from-gray-50 to-white cursor-pointer"
+                          style={{ animationDelay: `${categoryIndex * 0.3 + projectIndex * 0.2}s` }}
+                        >
+                          <div className="relative overflow-hidden">
+                            <img 
+                              src={project.image} 
+                              alt={project.title}
+                              className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                          </div>
+                          
+                          <div className="p-6">
+                            <h5 className="font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors duration-300">
+                              {project.title}
+                            </h5>
+                            <p className="text-gray-600 text-sm leading-relaxed">
+                              {project.description}
+                            </p>
+                          </div>
+                          
+                          <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div className="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center">
+                              <category.icon className="w-4 h-4 text-primary" />
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
+                      </DialogTrigger>
+                      <DialogContent className="max-w-4xl w-[90vw] max-h-[90vh] p-0 overflow-hidden">
+                        <div className="relative">
+                          <img 
+                            src={project.image} 
+                            alt={project.title}
+                            className="w-full h-auto max-h-[80vh] object-contain"
+                          />
+                          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                            <h3 className="text-white text-xl font-bold mb-2">{project.title}</h3>
+                            <p className="text-white/90 text-sm">{project.description}</p>
+                          </div>
+                        </div>
+                      </DialogContent>
+                    </Dialog>
                   ))}
                 </div>
               </div>
