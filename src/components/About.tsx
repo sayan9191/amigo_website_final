@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Target, Users, Clock, Headphones, Calendar, MapPin, Briefcase, TrendingUp } from 'lucide-react';
 
@@ -22,21 +21,17 @@ const About = () => {
     {
       icon: Headphones,
       title: "Ongoing support",
-      description: "Continuous assistance even after project completion"
+      description: (
+  <>
+    Continuous assistance even after project completion.<br />
+    May charges Applied (Terms & Condition)
+  </>
+)
+
     }
   ];
 
   const stats = [
-    {
-      icon: Calendar,
-      label: "Since",
-      value: "1st September, 2024"
-    },
-    {
-      icon: Users,
-      label: "Team",
-      value: "5+ Passionate Professionals"
-    },
     {
       icon: MapPin,
       label: "Presence",
@@ -45,7 +40,7 @@ const About = () => {
     {
       icon: Briefcase,
       label: "Projects Delivered",
-      value: "12+"
+      value: "100+"
     }
   ];
 
@@ -66,11 +61,11 @@ const About = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="grid md:grid-cols-4 gap-6 mb-16">
+        <div className="flex flex-wrap justify-center gap-6 mb-16">
           {stats.map((stat, index) => (
             <div 
               key={index}
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 animate-fade-in"
+              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 animate-fade-in w-full md:w-[48%]"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <stat.icon className="w-8 h-8 text-primary mb-3 mx-auto" />

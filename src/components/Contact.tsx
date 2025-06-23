@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Phone, Mail, MapPin, Facebook, Linkedin, Instagram } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Linkedin, Instagram, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -41,6 +40,11 @@ const Contact = () => {
       icon: Instagram,
       name: "Instagram",
       link: "https://www.instagram.com/marketingamigo52090"
+    },
+    {
+      icon: Globe,
+      name: "Google Business",
+      link: "https://g.co/kgs/Gt3LYC7"
     }
   ];
 

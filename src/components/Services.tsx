@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Megaphone, Globe, Palette, TrendingUp, Zap, PenTool } from 'lucide-react';
+import { Megaphone, Globe, Palette, TrendingUp, Zap, PenTool, ShoppingCart } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
 const Services = () => {
@@ -75,6 +74,19 @@ const Services = () => {
         "Video Content Production",
         "Graphic Design & Visual Content",
         "Content Strategy & Planning"
+      ]
+    },
+    {
+      icon: ShoppingCart,
+      title: "E-commerce Management",
+      description: "Account Setup & Management",
+      features: [
+        "Product Listing & Optimization",
+        "Product Image & Content Design",
+        "Order & Inventory Management",
+        "Customer Support & Review Management",
+        "Campaign & Promotion Setup",
+        "Monthly Reporting & Insights"
       ]
     }
   ];
