@@ -21,7 +21,7 @@ const Navigation = () => {
       {/* Top Info Bar */}
       <div className="bg-primary text-white text-xs sm:text-sm py-1 px-4 flex flex-col sm:flex-row justify-center sm:justify-between items-center">
         <div className="font-semibold mb-1 sm:mb-0">
-          MSME certified company
+          MSME Certified Company 
         </div>
         <div className="text-center sm:text-right text-[13px]">
           CALL US: <a href="tel:7001510950" className="underline">7001510950</a>, EMAIL US: <a href="mailto:marketingamigo.contact@gmail.com" className="underline">marketingamigo.contact@gmail.com</a>
