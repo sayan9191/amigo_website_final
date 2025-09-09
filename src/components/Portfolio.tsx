@@ -53,9 +53,9 @@ const Portfolio = () => {
       ],
       projects: [
         {
-          image: "/lovable-uploads/97d0d816-f44a-4116-a32a-257ee201ac8b.png",
-          title: "Arun Ice Creams",
-          description: "Modern ice cream brand logo with playful typography"
+          image: "/lovable-uploads/pixr_studio.png",
+          title: "Pixr Studio",
+          description: "Modern photography logo with camera lens and vibrant colors"
         },
         {
           image: "/lovable-uploads/5e7a846c-b127-404f-ab78-94388c2f6272.png",
@@ -63,9 +63,9 @@ const Portfolio = () => {
           description: "Eco-friendly restaurant logo with organic design elements"
         },
         {
-          image: "/lovable-uploads/394e819e-85ef-449e-bd88-043433b45363.png",
-          title: "Marketing Amigo",
-          description: "Professional marketing agency logo with growth symbolism"
+          image: "/lovable-uploads/shri.png",
+          title: "Shri ram Education",
+          description: "Professional education institute logo with academic symbolism"
         }
       ]
     },

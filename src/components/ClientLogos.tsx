@@ -6,7 +6,7 @@ const ClientLogos = () => {
     { name: "Rashna", image: "/lovable-uploads/cb309d42-e368-48a4-b1d7-40c260f219e1.png" },
     { name: "Pet Paradise", image: "/lovable-uploads/d3d52f60-465f-4ee4-ad67-af5036823cd4.png" },
     { name: "Gold Mark", image: "/lovable-uploads/64d1de5b-047b-4377-b85f-84cbdfbab1cb.png" },
-    { name: "Arun Ice Cream", image: "/lovable-uploads/2b032308-3630-4bcd-aa70-2a14297410ed.png" },
+    // { name: "Arun Ice Cream", image: "/lovable-uploads/2b032308-3630-4bcd-aa70-2a14297410ed.png" },
     { name: "Belly Chuckles Bistro", image: "/lovable-uploads/1f15527e-6acb-467f-b37e-872a51e2ec7f.png" },
     { name: "Green Leaf Restaurant", image: "/lovable-uploads/50c342f3-ab32-46f6-86f1-ad3bd7763939.png" },
     { name: "Sunshine Creation", image: "/lovable-uploads/36b6b6e4-d25b-4476-99bf-c0901add4f27.png" },
@@ -28,7 +28,7 @@ const ClientLogos = () => {
 
         {/* Moving logos container */}
         <div className="relative">
-          <div className="flex animate-scroll-left space-x-8">
+<div className="flex animate-scroll-left space-x-8" style={{ animationDuration: '15s' }}>
             {/* First set of logos */}
             {clientLogos.map((client, index) => (
               <div 

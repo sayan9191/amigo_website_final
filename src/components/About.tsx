@@ -31,18 +31,19 @@ const About = () => {
     }
   ];
 
-  const stats = [
-    {
-      icon: MapPin,
-      label: "Presence",
-      value: "Kolkata, North 24 PGS & other states"
-    },
-    {
-      icon: Briefcase,
-      label: "Projects Delivered",
-      value: "100+"
-    }
-  ];
+ const stats = [
+
+  {
+    icon: MapPin,
+    label: "Project presence",
+    value: "Kolkata, North 24 PGS & other states"
+  },
+  {
+    icon: Briefcase,
+    label: "Projects Delivered",
+    value: "100+"
+  }
+];
 
   return (
     <section id="about" className="py-20 bg-gray-50 relative overflow-hidden">

@@ -13,7 +13,8 @@ const Services = () => {
         "SEO & Google My Business Optimization", 
         "WhatsApp Marketing",
         "Email Marketing Campaigns",
-        "Online Reputation Management"
+        "Online Reputation Management",
+        "YouTube Monetization"
       ]
     },
     {
@@ -25,7 +26,6 @@ const Services = () => {
         "Business & E-commerce Web Design (WordPress, Shopify)",
         "Sales Funnel Marketing",
         "E-commerce Marketing (Amazon, Flipkart, Meesho)",
-        "YouTube Monetization"
       ]
     },
     {
