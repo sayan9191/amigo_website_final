@@ -25,7 +25,7 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const whatsappMessage = `Hello! I'm interested in your services.%0A%0AName: ${formData.firstName} ${formData.lastName}%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0AMessage: ${formData.message}`;
-    window.open(`https://wa.me/7001510950?text=${whatsappMessage}`, '_blank');
+    window.open(`https://wa.me/7812010950?text=${whatsappMessage}`, '_blank');
   };
 
   const handleChange = (e) => {
@@ -106,7 +106,7 @@ const ContactForm = () => {
           <div className="space-y-3">
             <div className="flex items-center space-x-3">
               <Phone className="w-4 h-4 text-primary" />
-              <a href="tel:7001510950" className="text-gray-600 hover:text-primary transition-colors">7001510950</a>
+              <a href="tel:7812010950" className="text-gray-600 hover:text-primary transition-colors">7812010950</a>
             </div>
             <div className="flex items-center space-x-3">
               <Mail className="w-4 h-4 text-primary" />
@@ -156,7 +156,7 @@ const ContactFormContent = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const whatsappMessage = `Hello! I'm interested in your services.%0A%0AName: ${formData.firstName} ${formData.lastName}%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0AMessage: ${formData.message}`;
-    window.open(`https://wa.me/7001510950?text=${whatsappMessage}`, '_blank');
+    window.open(`https://wa.me/7812010950?text=${whatsappMessage}`, '_blank');
   };
 
   const handleChange = (e) => {

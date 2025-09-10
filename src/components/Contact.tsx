@@ -8,8 +8,8 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      content: "7001510950",
-      link: "tel:7001510950"
+      content: "7812010950",
+      link: "tel:7812010950"
     },
     {
       icon: Mail,
@@ -19,7 +19,7 @@ const Contact = () => {
     },
     {
       icon: MapPin,
-      title: "Location",
+      title: "Office location",
       content: "Basirhat Baro Kalibari Para, West Bengal, Pin - 743411",
       link: "https://g.co/kgs/Mx6mKgr"
     }

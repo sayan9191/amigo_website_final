@@ -66,7 +66,7 @@ const ClientLogos = () => {
               <p className="text-white/90">Projects Delivered</p>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: '0.6s' }}>
-              <h3 className="text-2xl font-bold">50+</h3>
+              <h3 className="text-2xl font-bold">15+</h3>
               <p className="text-white/90">Team Members</p>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: '0.8s' }}>
