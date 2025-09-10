@@ -72,7 +72,7 @@ const Hero = () => {
               size="lg"
               variant="outline"
               className="border-2 border-white text-white bg-white/20 hover:bg-white hover:text-primary text-lg px-8 py-4 rounded-full backdrop-blur-sm transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-              onClick={() => window.open('https://wa.me/7001510950', '_blank')}
+              onClick={() => window.open('https://wa.me/7812010950', '_blank')}
             >
               <MessageCircle className="mr-2 w-6 h-6" size={20} />
               WhatsApp Us
